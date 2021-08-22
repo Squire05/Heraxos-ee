@@ -74,4 +74,20 @@ body {
   font-size: 8rem;
   text-shadow: 0px 0px 20px whitesmoke;
 }
+
+.her_div .app_div {
+  position: absolute;
+  width: 32.4rem;
+  height: 33rem;
+  margin-top: 18rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid red;
+}
 /*# sourceMappingURL=style.css.map */
