@@ -9,4 +9,49 @@ html {
   font-size: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.her_div {
+  width: 34rem;
+  height: 65rem;
+  border: 8px solid #1f1f1f;
+  border-radius: 30px;
+  border-top: 60px solid #1f1f1f;
+  border-bottom: 80px solid #1f1f1f;
+  background-image: url(./img/wallper_1.jpg);
+  background-size: 100% 120%;
+  background-position-y: 30%;
+  background-repeat: no-repeat;
+}
+
+.her_div div:last-child {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  border: 2px inset black;
+  background: -webkit-gradient(linear, left top, right top, from(#0d0d0d), to(#171717));
+  background: linear-gradient(90deg, #0d0d0d, #171717);
+  margin-top: 162%;
+  margin-left: 43%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.her_div div:last-child:active {
+  background: #0d0d0d;
+}
 /*# sourceMappingURL=style.css.map */
