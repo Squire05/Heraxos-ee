@@ -130,4 +130,50 @@ body {
   margin-top: 142%;
   text-shadow: 0px 0px 20px #1a1a1a;
 }
+
+.app_div {
+  width: 32.4rem;
+  height: 48rem;
+  margin-top: 3rem;
+  padding: 0rem 1rem 0rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.app_div .apps_div {
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid red;
+  border-radius: 10px;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.app_div .apps_div:hover {
+  cursor: pointer;
+  -webkit-filter: contrast(100%);
+          filter: contrast(100%);
+}
+
+.app_div .apps_div:active {
+  -webkit-filter: contrast(150%);
+          filter: contrast(150%);
+}
+
+.app_div .settings_app {
+  background-image: url(./img/app_icon/settings_icon.png);
+  background-size: 100% 100%;
+  -webkit-filter: contrast(150%);
+          filter: contrast(150%);
+}
 /*# sourceMappingURL=style.css.map */
