@@ -1,3 +1,18 @@
+%time {
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    width: 25rem;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 8rem;
+    text-shadow: 0px 0px 20px #1a1a1a;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +32,33 @@ body {
     height: 100vh;
 }
 
+.screen{
+    width: 32.4rem;
+    height: 51rem;
+    position: absolute;
+    // border:1px solid red;
+    background-image: url(./img/Wallpers/wallper_1.jpg);
+    background-size: 100% 120%;
+    background-position-y: 30%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.header {
+    width: 32.4rem;
+    height: 1.5rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    // border: 1px blue solid;
+    z-index: 1;
+    div {
+        color: whitesmoke;
+        font-size: 1.2rem;
+    }
+}
+
 
 .her_div {
     width: 34rem;
@@ -25,49 +67,53 @@ body {
     border-radius: 30px;
     border-top: 60px solid lighten(#1a1a1a, 2);
     border-bottom: 80px solid lighten(#1a1a1a, 2);
+    z-index: 2;
+}
+
+.home_but {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    border: 2px inset black;
+    background: linear-gradient(90deg, darken(#1a1a1a, 5), darken(#1a1a1a, 1));
+    margin-top: 161.5%;
+    margin-left: 41%;
+    transition: 0.2s;
+    z-index: 1;
+    cursor: pointer;
+    z-index: 2;
+    &:active {
+        background: darken(#1a1a1a, 5);
+    }
+}
+
+.time_div {
+    @extend %time;
+    z-index: 4;
+}
+
+.bl_screen {
+    position: absolute;
+    // border: 1px solid red;
+    width: 32.4rem;
+    height: 51rem;
+    z-index: 1;
+    margin-left: -0.1rem;
     background-image: url(./img/Wallpers/wallper_1.jpg);
     background-size: 100% 120%;
     background-position-y: 30%;
     background-repeat: no-repeat;
-    div {
-        &:last-child {
-            width: 5rem;
-            height: 5rem;
-            border-radius: 100%;
-            border: 2px inset black;
-            background: linear-gradient(90deg, darken(#1a1a1a, 5), darken(#1a1a1a, 1));
-            margin-top: 162%;
-            margin-left: 43%;
-            transition: 0.2s;
-            cursor: pointer;
-            &:active {
-                background: darken(#1a1a1a, 5);
-            }
-        }
+    text-align: center;
+    transition: 0.5s;
+    overflow: hidden;
+    .time_div_2 {
+        @extend %time;
     }
 
-    .time_div {
-        position: absolute;
-        margin-top: 3rem;
-        margin-left: 4rem;
-        width: 25rem;
-        height: 13rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .phb {
         color: whitesmoke;
-        font-size: 8rem;
-        text-shadow: 0px 0px 20px whitesmoke;
-    }
-
-    .app_div {
-        position: absolute;
-        width: 32.4rem;
-        height: 33rem;
-        margin-top: 18rem;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        border: 1px solid red;
+        font-size: 1.8rem;
+        margin-top: 142%;
+        text-shadow: 0px 0px 20px #1a1a1a;
     }
 }

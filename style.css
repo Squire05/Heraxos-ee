@@ -1,3 +1,23 @@
+.time_div, .bl_screen .time_div_2 {
+  position: absolute;
+  margin-top: 3rem;
+  margin-left: 4rem;
+  width: 25rem;
+  height: 13rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: whitesmoke;
+  font-size: 8rem;
+  text-shadow: 0px 0px 20px #1a1a1a;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +44,36 @@ body {
   height: 100vh;
 }
 
+.screen {
+  width: 32.4rem;
+  height: 51rem;
+  position: absolute;
+  background-image: url(./img/Wallpers/wallper_1.jpg);
+  background-size: 100% 120%;
+  background-position-y: 30%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.header {
+  width: 32.4rem;
+  height: 1.5rem;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 0.5rem;
+  z-index: 1;
+}
+
+.header div {
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+
 .her_div {
   width: 34rem;
   height: 65rem;
@@ -31,63 +81,53 @@ body {
   border-radius: 30px;
   border-top: 60px solid #1f1f1f;
   border-bottom: 80px solid #1f1f1f;
-  background-image: url(./img/Wallpers/wallper_1.jpg);
-  background-size: 100% 120%;
-  background-position-y: 30%;
-  background-repeat: no-repeat;
+  z-index: 2;
 }
 
-.her_div div:last-child {
+.home_but {
   width: 5rem;
   height: 5rem;
   border-radius: 100%;
   border: 2px inset black;
   background: -webkit-gradient(linear, left top, right top, from(#0d0d0d), to(#171717));
   background: linear-gradient(90deg, #0d0d0d, #171717);
-  margin-top: 162%;
-  margin-left: 43%;
+  margin-top: 161.5%;
+  margin-left: 41%;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  z-index: 1;
   cursor: pointer;
+  z-index: 2;
 }
 
-.her_div div:last-child:active {
+.home_but:active {
   background: #0d0d0d;
 }
 
-.her_div .time_div {
-  position: absolute;
-  margin-top: 3rem;
-  margin-left: 4rem;
-  width: 25rem;
-  height: 13rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: whitesmoke;
-  font-size: 8rem;
-  text-shadow: 0px 0px 20px whitesmoke;
+.time_div {
+  z-index: 4;
 }
 
-.her_div .app_div {
+.bl_screen {
   position: absolute;
   width: 32.4rem;
-  height: 33rem;
-  margin-top: 18rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  border: 1px solid red;
+  height: 51rem;
+  z-index: 1;
+  margin-left: -0.1rem;
+  background-image: url(./img/Wallpers/wallper_1.jpg);
+  background-size: 100% 120%;
+  background-position-y: 30%;
+  background-repeat: no-repeat;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.bl_screen .phb {
+  color: whitesmoke;
+  font-size: 1.8rem;
+  margin-top: 142%;
+  text-shadow: 0px 0px 20px #1a1a1a;
 }
 /*# sourceMappingURL=style.css.map */
